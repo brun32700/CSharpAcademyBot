@@ -1,0 +1,16 @@
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.deps.json
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.runtimeconfig.json
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.exe
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.deps.json
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.dll
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\bin\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.pdb
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.csproj.AssemblyReference.cache
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.AssemblyInfoInputs.cache
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.AssemblyInfo.cs
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.csproj.CopyComplete
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.dll
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\refint\CSharpAcademyBot.MySqlMigrations.dll
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\CSharpAcademyBot.MySqlMigrations.pdb
+C:\Users\Bruno\Desktop\Programming_Projects\TheC#Academy\CSharpAcademyBot\CSharpAcademyBot.MySqlMigrations\obj\Debug\net7.0\ref\CSharpAcademyBot.MySqlMigrations.dll
