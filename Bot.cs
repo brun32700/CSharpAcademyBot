@@ -1,5 +1,4 @@
 ﻿using CSharpAcademyBot.Contexts;
-using CSharpAcademyBot.Factories;
 using CSharpAcademyBot.Repositories;
 using CSharpAcademyBot.Services;
 using DSharpPlus;
@@ -10,8 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using System.Text;
 
 namespace CSharpAcademyBot;
 
@@ -147,10 +144,23 @@ internal class Bot
     {
         var configuration = GetConfiguration();
         var serviceCollection = new ServiceCollection();
-        serviceCollection.AddDbContext<AcademyContext>(optionsBuilder =>
-        {
-            optionsBuilder.UseMySql(configuration["ConnectionStrings:MySqlConnection"], ServerVersion.AutoDetect(configuration["ConnectionStrings:MySqlConnection"]));
-        });
+        // https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/providers?tabs=dotnet-core-cli
+        // https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/projects?tabs=dotnet-core-cli
+        var provider = configuration["provider"];
+        serviceCollection.AddDbContext<AcademyContext>(
+            options => _ = provider switch
+            {
+                "sqlserver" => options.UseSqlServer(
+                    configuration["ConnectionStrings:SqlConnection"],
+                    x => x.MigrationsAssembly("CSharpAcademyBot.SqlServerMigrations")),
+
+                "mysql" => options.UseMySql(
+                    configuration["ConnectionStrings:MySqlConnection"],
+                    ServerVersion.AutoDetect(configuration["ConnectionStrings:MySqlConnection"]),
+                    x => x.MigrationsAssembly("CSharpAcademyBot.MySqlMigrations")),
+
+                _ => throw new Exception($"Unsupported provider: {provider}")
+            });
         serviceCollection.AddScoped<ReputationManager>();
         serviceCollection.AddScoped<IAcademyService, AcademyService>();
         serviceCollection.AddScoped<IAcademyRepository, AcademyRepository>();
